@@ -1,4 +1,7 @@
+/* eslint-disable prettier/prettier */
+// eslint-disable-next-line prettier/prettier
 import {
+  // eslint-disable-next-line prettier/prettier
   MigrationInterface,
   QueryRunner,
   TableColumn,

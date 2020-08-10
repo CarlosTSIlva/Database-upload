@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+// eslint-disable-next-line prettier/prettier
 import { MigrationInterface, QueryRunner, Table } from 'typeorm';
 
 export default class CreateTransactions1596746908369
@@ -34,7 +36,7 @@ export default class CreateTransactions1596746908369
             default: 'now()',
           },
           {
-            name: 'update_at',
+            name: 'updated_at',
             type: 'timestamp',
             default: 'now()',
           },
@@ -43,7 +45,7 @@ export default class CreateTransactions1596746908369
     );
   }
 
-  public async down(queryRunner: QueryRunner): Promise<any> {
+  public async down(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.dropTable('transactions');
   }
 }
